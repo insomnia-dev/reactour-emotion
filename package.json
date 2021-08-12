@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elrumordelaluz/reactour.git"
+    "url": "git+https://github.com/insomnia-dev/reactour-emotion.git"
   },
   "keywords": [
     "react",
@@ -35,12 +35,12 @@
     "dist",
     "README.md"
   ],
-  "author": "Lionel T <elrumordelaluz@hotmail.com> (https://elrumordelaluz.com/)",
+  "author": "Chris Sandvik <chris.sandvik@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/elrumordelaluz/reactour/issues"
+    "url": "https://github.com/insomnia-dev/reactour-emotion/issues"
   },
-  "homepage": "https://github.com/elrumordelaluz/reactour#readme",
+  "homepage": "https://github.com/insomnia-dev/reactour-emotion#readme",
   "devDependencies": {
     "@babel/cli": "7.14.8",
     "@babel/core": "7.15.0",
