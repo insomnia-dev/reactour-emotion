@@ -1,7 +1,6 @@
 import React, { useState, useEffect, Suspense, lazy } from 'react'
 import Tour, { Navigation, Dot, Controls, Arrow } from '../index'
 import 'focus-outline-manager'
-import { GlobalStyle } from './../style'
 import Demo from './Demo'
 import Text from './Text'
 import Glitch from './Glitch'
@@ -37,12 +36,11 @@ function App() {
     return () => window.removeEventListener('keyup', keyHandling)
   }, [isTourOpen, customComps])
 
-  const disableBody = target => disableBodyScroll(target)
-  const enableBody = target => enableBodyScroll(target)
+  const disableBody = (target) => disableBodyScroll(target)
+  const enableBody = (target) => enableBodyScroll(target)
   const accentColor = 'linear-gradient(to right, #1c8f9e, #5cb7b7)'
   return (
     <>
-      <GlobalStyle />
       <Demo
         openTour={() => setOpen(true)}
         toggleShowMore={() => setShowingMore(!isShowingMore)}
@@ -244,7 +242,7 @@ const tourConfig = [
     content:
       'And the Tour could be observing changes to update the view, try clicking the button…',
     observe: '[data-tut="reactour__state--observe"]',
-    action: node => node.focus(),
+    action: (node) => node.focus(),
   },
   {
     selector: '[data-tut="reactour__highlighted"]',

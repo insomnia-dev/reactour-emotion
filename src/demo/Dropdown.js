@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import { fontFamily, headingSizes, themeColors } from './settings'
 
 const DropdownWrapper = styled.div`

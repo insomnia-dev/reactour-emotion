@@ -4,7 +4,6 @@ import scrollSmooth from 'scroll-smooth'
 import Scrollparent from 'scrollparent'
 import debounce from 'lodash.debounce'
 import FocusLock from 'react-focus-lock'
-import { GlobalStyle } from './style'
 import {
   Arrow,
   Close,
@@ -400,7 +399,6 @@ class Tour extends Component {
     if (isOpen) {
       return (
         <Portal>
-          <GlobalStyle />
           <ReactourResizeObserver
             step={steps[current]}
             refresh={() => this.recalculateNode(steps[current])}

@@ -10,16 +10,16 @@ export default ({ step, refresh }) => {
       return
     }
 
-    const incrementMutationsCounterIfObservable = nodes => {
+    const incrementMutationsCounterIfObservable = (nodes) => {
       for (const node of nodes) {
         if (!node.attributes) {
           continue
         }
 
-        const found = step.resizeObservables.find(observable => (
-          node.matches(observable) ||
-          node.querySelector(observable) != null
-        ))
+        const found = step.resizeObservables.find(
+          (observable) =>
+            node.matches(observable) || node.querySelector(observable) != null
+        )
 
         if (found) {
           setMutationsCounter(mutationsCounter + 1)
@@ -27,7 +27,7 @@ export default ({ step, refresh }) => {
       }
     }
 
-    const mutationObserver = new MutationObserver(mutationsList => {
+    const mutationObserver = new MutationObserver((mutationsList) => {
       for (const mutation of mutationsList) {
         if (0 !== mutation.addedNodes.length) {
           incrementMutationsCounterIfObservable(mutation.addedNodes)
@@ -55,7 +55,7 @@ export default ({ step, refresh }) => {
       return
     }
 
-    const resizeObserver = new ResizeObserver(entries => {
+    const resizeObserver = new ResizeObserver((entries) => {
       refresh()
     })
 

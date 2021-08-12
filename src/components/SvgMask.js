@@ -1,11 +1,11 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import * as hx from '../helpers'
 import PropTypes from 'prop-types'
 
 const SvgMaskWrapper = styled.div`
-  opacity: ${props => !props.maskClassName && 0.7};
-  color: ${props => !props.maskClassName && '#000'};
+  opacity: ${(props) => !props.maskClassName && 0.7};
+  color: ${(props) => !props.maskClassName && '#000'};
   width: 100%;
   left: 0;
   top: 0;

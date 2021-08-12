@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import * as hx from '../helpers'
 
 const Guide = styled.div`

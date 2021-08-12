@@ -1,10 +1,10 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import { Shake } from 'reshake'
 import PropTypes from 'prop-types'
 
 const LogoWrapper = styled.div`
-  font-size: ${props => (props.size ? props.size : '70vw')};
+  font-size: ${(props) => (props.size ? props.size : '70vw')};
   width: 1em;
   display: inline-block;
   max-width: 430px;
